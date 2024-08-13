@@ -19,6 +19,7 @@
     <!-- icons -->
 
     <link href="src/styles.css" rel="stylesheet" />
+    <link href="src/media-queries.css" rel="stylesheet" />
 
     <title>HOME</title>
   </head>
@@ -46,12 +47,6 @@
             <p class="nav-text">About me</p>
           </a>
         </li>
-        <!-- <li>  for later updates
-          <a class="nav-list-item" href="#">
-            <ion-icon name="send" class="nav-icon"></ion-icon>
-            <p class="nav-text">Contact</p>
-          </a>
-        </li> -->
       </ul>
       <div class="quick-links">
         <p class="quick-links-text">quick links:</p>
@@ -76,9 +71,6 @@
       </div>
     </nav>
     <main class="main">
-      <!-- <div class="back-img">
-        <div class="back-img-in"></div>
-      </div> -->
       <div class="back-img">
         <ul class="circles">
           <li></li>
@@ -135,8 +127,6 @@
           <p class="hero-para">
             < i am vignesh, turning ideas into code—innovate, create, and shape
             the future. />.
-            <!-- < i am a tech enthusiast, like to learn new things and do things
-            with that />. -->
           </p>
         </div>
         <a class="hero-button" href="#"
@@ -235,7 +225,7 @@
                   alt="imagto - AI image generation"
               /></a>
               <div class="carosol-text">
-                <h3 class="featured-project-h3">Omnifood</h3>
+                <h3 class="featured-project-h3">Learn a fact</h3>
                 <p class="featured-project-carosol-p">
                   Learn a fact - Post facts you know, get knowledge of facts
                   from others, like and dislike facts.
@@ -257,7 +247,6 @@
         </div>
       </section>
       <section class="about-me">
-        <!-- <h2 class="about-me-h2">A small intro</h2> -->
         <div class="about-me-grid">
           <div class="about-me-box">
             <h3 class="about-me-box-h3">About me</h3>
@@ -281,13 +270,16 @@
               <li class="about-me-skill-li"><p></p></li>
               <li class="about-me-skill-li"><p></p></li>
               <li class="about-me-skill-li"><p></p></li>
-              <!-- <li class="about-me-skill-li"><p></p></li> -->
-              <!-- <li class="about-me-skill-li"><p></p></li> -->
             </ul>
           </div>
           <div class="about-me-resume">
             <p class="about-me-resume-p">Take a look into my Resume</p>
-            <a class="about-me-resume-a" href="#" target="_blank" title="Resume"
+            <a
+              class="about-me-resume-a"
+              href="https://www.canva.com/design/DAGDxPUSmCg/SkoMX356nJ6KVPXM8NSGIQ/view?utm_content=DAGDxPUSmCg&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+              target="_blank"
+              title="Resume"
+              rel="noopener"
               >Tap me!</a
             >
           </div>
@@ -324,7 +316,7 @@
                   ><ion-icon name="mail"></ion-icon
                 ></a>
                 <a
-                  class="contact-links-text"
+                  class="contact-links-text contact-links-text-email"
                   href="mailto:vignesh_m20@outlook.com"
                   target="_blank"
                   >vignesh_m20@outlook.com</a
@@ -360,7 +352,10 @@
                   target="_blank"
                   title="Github profile"
                   rel="noopener"
-                  ><ion-icon name="logo-github"></ion-icon
+                  ><ion-icon
+                    class="contact-links-icon"
+                    name="logo-github"
+                  ></ion-icon
                 ></a>
                 <a
                   class="contact-links-text"
