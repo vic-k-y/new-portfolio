@@ -13,7 +13,9 @@ allLink.forEach(function (link) {
       });
     // scroll to other links
     if (href !== "#" && href.startsWith("#")) {
+      console.log(document.querySelector("#project"));
       const selector = document.querySelector(href);
+      console.log(selector);
       selector.scrollIntoView({ behavior: "smooth" });
     }
     // close the nav bar after clicking the link in it.
