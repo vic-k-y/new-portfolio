@@ -48,9 +48,9 @@ const obser = new IntersectionObserver(
   }
 );
 
-obser.observe(homeel);
-obser.observe(projectel);
-obser.observe(aboutel);
+// obser.observe(homeel);
+// obser.observe(projectel);
+// obser.observe(aboutel);
 
 // const cur = document.getElementById(".hero");
 // console.log(location.classList);
