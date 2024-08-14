@@ -291,7 +291,7 @@ HERO CONTANT
 .hero {
   position: relative;
   height: 100vh;
-  padding: 24rem 4rem;
+  padding: 0 4rem;
   background-image: linear-gradient(#fff,#fff,#d0ddd5);
 }
 
@@ -306,15 +306,18 @@ HERO CONTANT
   font-variant: small-caps;
 }
 
+
 .hero-back-grid {
   position: absolute;
   top: 50%;
+  /* right: 50%; */
   width: 50rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr 1fr;
 
   transform: translateY(-50%);
+  /* align-self: center; */
 }
 
 .hero-back-grid-img {
@@ -346,6 +349,8 @@ HERO CONTANT
 
 .hero-text-box {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 100;
 }
 
@@ -688,6 +693,7 @@ featured project section
 }
 
 .contact-box-inner-ul {
+  height: 100%;
   list-style: none;
   font-size: 1.8rem;
 
