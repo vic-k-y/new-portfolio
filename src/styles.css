@@ -12,9 +12,10 @@ background color  #e8eeea*/
 html {
   font-size: 62.5%;
   color: #333333;
+  scroll-behavior: smooth;
 }
 
-.a-links {
+.a-links:link, .a-links:visited {
   text-decoration: none;
   color: #333;
 }
@@ -65,7 +66,7 @@ html {
   gap: 1.6rem;
 }
 
-.nav-list-item {
+.nav-list-item:link, .nav-list-item:visited {
   color: #333333;
   text-decoration: none;
   display: flex;
@@ -79,7 +80,7 @@ html {
   }
 }
 
-.nav-list-item:hover {
+.nav-list-item:hover,.nav-list-item:active, .current-indi {
   .nav-text {
     background-color: #e8eeea;
     border-left: 2px solid #104224;
@@ -91,6 +92,12 @@ html {
     transform: scale(1.5);
   }
 }
+
+/* for current select indicator in nav bar */
+/* .current-indi {
+  color: #14532d;
+  transform: scale(1.2);
+} */
 
 .nav-icon {
   font-size: 3.2rem;
@@ -122,11 +129,11 @@ html {
   justify-content: center;
 }
 
-.quick-links-icon {
+.quick-links-icon:link, .quick-links-icon:visited {
   color: #000;
   font-size: 3.8rem;
 }
-.quick-links-icon:hover {
+.quick-links-icon:hover, .quick-links-icon:active {
   color: #14532d;
 }
 
@@ -354,7 +361,7 @@ HERO CONTANT
   z-index: 100;
 }
 
-.hero-button {
+.hero-button:link, .hero-button:visited {
   position: absolute;
   bottom: 5%;
   right: 50%;
@@ -399,7 +406,7 @@ featured project section
 ===============================================================*/
 
 .featured-project {
-  
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -517,7 +524,7 @@ featured project section
   font-size: 1.6rem;
 }
 
-.featured-project-carosol-btn {
+.featured-project-carosol-btn:link, .featured-project-carosol-btn:visited {
     color: #14532d;
     font-size: 3.8rem;
 
@@ -634,7 +641,7 @@ featured project section
   font-size: 1.6rem;
 }
 
-.about-me-resume-a {
+.about-me-resume-a:link, .about-me-resume-a:visited {
   font-size: 2rem;
   text-decoration: none;
   background-color: #14532d;
