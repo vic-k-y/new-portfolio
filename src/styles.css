@@ -434,28 +434,34 @@ featured project section
   margin: 0 2.8rem; 
 }
 
-.featured-project-left-icon {
-  position: absolute;
-  top: 50%;
-  border-radius: 50%;
-  
-  font-size: 4.8rem;
-  color: #fff;
-  
-  transform: translate(-100%,-50%);
-  z-index: 99;
-}
+
+.featured-project-left-icon, 
 .featured-project-right-icon {
   position: absolute;
-  top: 50%;
-  right: 0%;
   border-radius: 50%;
-
   font-size: 4.8rem;
   color: #fff;
 
-  transform: translate(100%,-50%);
+  cursor: pointer;
+  transition: all 0.3s;
   z-index: 99;
+
+}
+.featured-project-left-icon {
+  top: 50%;
+  transform: translate(-100%,-50%);
+
+}
+.featured-project-right-icon {
+  top: 50%;
+  right: 0%;
+  transform: translate(100%,-50%);
+
+}
+
+.featured-project-left-icon:active,
+.featured-project-right-icon:active {
+  color: #14532d;
 }
 
 .featured-project-scroll {
@@ -533,7 +539,7 @@ featured project section
 
     margin-left: auto;
 }
-.featured-project-carosol-btn:hover {
+.featured-project-carosol-btn:hover{
   color: #437557;
 }
 .featured-project-carosol-btn:active {

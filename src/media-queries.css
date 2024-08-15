@@ -405,7 +405,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 1rem;
+    padding: 2rem;
     z-index: 999999 !important;
 
     transform: translate(-40%, -30%);
@@ -652,6 +652,7 @@
 
   .nav {
     gap: 2rem;
+    padding: 2rem 1rem;
     transform: translate(-20%, -20%);
   }
 
@@ -738,7 +739,7 @@
   /* featured project */
 
   .featured-project {
-    margin-bottom: 3rem;
+    margin: 0rem;
   }
 
   .featured-project-div {
@@ -748,7 +749,7 @@
 
   .featured-project-h2 {
     font-size: 2rem;
-    margin: 1.6rem 0.5rem;
+    margin: 0.6rem 0.5rem;
     padding: 1rem 1rem;
   }
 
@@ -777,7 +778,7 @@
   }
 
   .featured-project-carosol:first-child {
-    margin-left: 2rem;
+    margin-left: 1rem;
     /* padding-right: 1rem; */
   }
   .featured-project-carosol:last-child {
@@ -805,6 +806,11 @@
     font-size: 5rem;
     margin-left: 5rem;
   }
+  .featured-project-carosol:last-child .featured-project-carosol-btn:link,
+  .featured-project-carosol:last-child .featured-project-carosol-btn:visited {
+    font-size: 5rem;
+    margin-left: 2rem;
+  }
   .featured-tags span {
     font-size: 1rem;
     letter-spacing: 0.15rem;
@@ -826,10 +832,11 @@
     padding: 0;
   }
   .about-me-box-h3 {
-    font-size: 2rem;
+    font-size: 3.6rem;
+    transform: translateX(20%);
   }
   .about-me-box-p {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   .about-me-skill {
@@ -841,10 +848,11 @@
   }
 
   .about-me-resume-p {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
-  .about-me-resume-a {
-    font-size: 1rem;
+  .about-me-resume-a:link,
+  .about-me-resume-a:visited {
+    font-size: 1.4rem;
 
     padding: 0.6rem 1.2rem;
   }
@@ -870,13 +878,13 @@
     width: 100%;
   }
   .contact-box-inner-h4 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     letter-spacing: 0.4rem;
     padding: 0.8rem 0.6rem;
   }
   .contact-box-inner-ul {
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     border-radius: 5px;
     padding: 0.8rem 0.4rem;
   }
@@ -890,11 +898,203 @@
   }
 }
 
+/* ========= 416px - fix hero page background box */
+@media (max-width: 26em) {
+  .hero-back-grid-img {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+
 /* ========== 320px ========== small phones */
 
 @media (max-width: 20em) {
+  .nav {
+    gap: 1.4rem;
+    padding: 1.6rem 0.6rem;
+    transform: translate(-20%, -20%);
+  }
+
+  .nav-img {
+    height: 4rem;
+    border-radius: 50%;
+    border: 2px solid #14532d;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .nav-list-item {
+    color: #333333;
+    text-decoration: none;
+    display: flex;
+
+    align-items: center;
+  }
+
+  .nav-icon {
+    font-size: 3rem;
+  }
+
+  .quick-links {
+    display: none;
+  }
+
+  /* ---------- hero section ---------- */
+
   .hero-back-grid-img {
     height: 7rem;
     width: 7rem;
+  }
+
+  .hero-h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .hero-para {
+    font-size: 2.6rem;
+  }
+
+  .hero-button:link,
+  .hero-button:visited {
+    gap: 1.2rem;
+    padding: 0.8rem 1.2rem;
+  }
+  .hero-button-p {
+    font-size: 1.4rem;
+  }
+  .hero-button-icon {
+    font-size: 3rem;
+  }
+
+  /* ---- featured projects ---- */
+
+  .featured-project {
+    margin: 0rem;
+  }
+
+  .featured-project-div {
+    margin: 0;
+    width: 100%;
+  }
+
+  .featured-project-h2 {
+    font-size: 2rem;
+    margin: 0.6rem 0.5rem;
+    padding: 1rem 1rem;
+  }
+
+  .featured-project-left-icon {
+    top: 100%;
+    right: 50%;
+
+    font-size: 5rem;
+    /* transform: translate(-70%, 0%); */
+  }
+  .featured-project-right-icon {
+    top: 100%;
+    right: 40%;
+
+    font-size: 5rem;
+    /* transform: translate(70%, 0%); */
+  }
+
+  .featured-project-carosol {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    gap: 1.8rem;
+
+    margin: 2rem 1rem 2rem 2rem;
+  }
+
+  .featured-project-carosol:first-child {
+    margin-left: 1rem;
+    /* padding-right: 1rem; */
+  }
+  .featured-project-carosol:last-child {
+    padding: 2rem;
+  }
+
+  .featured-project-carosol-fig {
+    height: 28rem;
+    transform: scale(1);
+  }
+
+  .carosol-text {
+    width: 25rem;
+    gap: 1rem;
+  }
+  .featured-project-h3 {
+    font-size: 3rem;
+  }
+  .featured-project-carosol-p {
+    font-size: 1.6rem;
+  }
+
+  .featured-project-carosol-btn:link,
+  .featured-project-carosol-btn:visited {
+    font-size: 5rem;
+    margin-left: 5rem;
+  }
+  .featured-project-carosol:last-child .featured-project-carosol-btn:link,
+  .featured-project-carosol:last-child .featured-project-carosol-btn:visited {
+    font-size: 5rem;
+    margin-left: 2rem;
+  }
+  .featured-tags span {
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    padding: 0.3rem 0.3rem;
+    border-radius: 3px;
+  }
+
+  /* ------ about me ---------*/
+
+  .about-me-grid {
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 4fr 1fr;
+
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .about-me-box {
+    padding: 0;
+  }
+  .about-me-box-h3 {
+    font-size: 3rem;
+    transform: translateX(20%);
+  }
+  .about-me-box-p {
+    font-size: 1.4rem;
+  }
+
+  .about-me-skill {
+    padding: 0;
+  }
+  .about-me-skill-li {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .about-me-resume-p {
+    font-size: 1.2rem;
+  }
+  .about-me-resume-a:link,
+  .about-me-resume-a:visited {
+    font-size: 1.2rem;
+
+    padding: 0.6rem 1.2rem;
   }
 }
