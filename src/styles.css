@@ -299,7 +299,7 @@ HERO CONTANT
   position: relative;
   height: 100vh;
   padding: 0 4rem;
-  background-image: linear-gradient(#fff,#fff,#d0ddd5);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2),#fff,#d0ddd5);
 }
 
 .hero-h1 {
