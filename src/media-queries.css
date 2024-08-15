@@ -748,7 +748,7 @@
   }
 
   .featured-project-h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin: 0.6rem 0.5rem;
     padding: 1rem 1rem;
   }
@@ -778,27 +778,28 @@
   }
 
   .featured-project-carosol:first-child {
-    margin-left: 1rem;
+    margin-left: 4rem;
     /* padding-right: 1rem; */
   }
   .featured-project-carosol:last-child {
-    padding: 2rem;
+    margin-right: 4rem;
+    /* padding: 2rem; */
   }
 
   .featured-project-carosol-fig {
-    height: 35rem;
+    height: 30rem;
     transform: scale(1);
   }
 
   .carosol-text {
-    /* width: 25rem; */
+    width: 25rem;
     gap: 1rem;
   }
   .featured-project-h3 {
-    font-size: 4rem;
+    font-size: 2.4rem;
   }
   .featured-project-carosol-p {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .featured-project-carosol-btn:link,
@@ -832,11 +833,11 @@
     padding: 0;
   }
   .about-me-box-h3 {
-    font-size: 3.6rem;
+    font-size: 3rem;
     transform: translateX(20%);
   }
   .about-me-box-p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .about-me-skill {
@@ -989,7 +990,7 @@
   }
 
   .featured-project-h2 {
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0.6rem 0.5rem;
     padding: 1rem 1rem;
   }
@@ -1012,22 +1013,23 @@
   .featured-project-carosol {
     display: flex;
     flex-direction: column;
-    padding: 2rem 2rem;
+    padding: 1rem;
     gap: 1.8rem;
 
     margin: 2rem 1rem 2rem 2rem;
   }
 
   .featured-project-carosol:first-child {
-    margin-left: 1rem;
+    margin-left: 2rem;
     /* padding-right: 1rem; */
   }
   .featured-project-carosol:last-child {
-    padding: 2rem;
+    margin-right: 2rem;
+    /* padding: 2rem; */
   }
 
   .featured-project-carosol-fig {
-    height: 28rem;
+    height: 25rem;
     transform: scale(1);
   }
 
@@ -1036,10 +1038,10 @@
     gap: 1rem;
   }
   .featured-project-h3 {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
   .featured-project-carosol-p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .featured-project-carosol-btn:link,
@@ -1050,10 +1052,10 @@
   .featured-project-carosol:last-child .featured-project-carosol-btn:link,
   .featured-project-carosol:last-child .featured-project-carosol-btn:visited {
     font-size: 5rem;
-    margin-left: 2rem;
+    margin-left: 0rem;
   }
   .featured-tags span {
-    font-size: 1rem;
+    font-size: 0.6rem;
     letter-spacing: 0.15rem;
     padding: 0.3rem 0.3rem;
     border-radius: 3px;
@@ -1096,5 +1098,45 @@
     font-size: 1.2rem;
 
     padding: 0.6rem 1.2rem;
+  }
+
+  /* contact page */
+  .contact-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 2rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+  .contact-box-inner {
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    /* margin-bottom: 2rem; */
+  }
+  .contact-box-inner:first-child {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+  .contact-box-inner-h4 {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+    padding: 0.8rem 0.6rem;
+  }
+  .contact-box-inner-ul {
+    height: 100%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 0.8rem 0.4rem;
+  }
+  .contact-box-inner-li {
+    margin-top: 0.8rem;
+  }
+
+  .contact-links-icon {
+    color: #000;
+    font-size: 2rem;
   }
 }
