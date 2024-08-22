@@ -441,6 +441,18 @@
     align-items: center;
   }
 
+  .nav-list .nav-list-item:hover,
+  .nav-list .nav-list-item:active,
+  .nav-list .current-indi {
+    .nav-icon {
+      color: #333;
+      transform: none;
+    }
+  }
+  /* .current-indi {
+    display: inline-block !important;
+  } */
+
   .nav-icon {
     font-size: 4rem;
   }
