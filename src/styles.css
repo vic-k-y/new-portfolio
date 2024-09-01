@@ -22,7 +22,7 @@ html {
 
 .body {
   font-family: rubik, sans-serif;
-  height: 100vh;
+  height: 100dvh;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -145,7 +145,7 @@ HERO CONTANT
   position: fixed;
   background: #124b29;  
   background: -webkit-linear-gradient(to left, #2c6442, #437557); 
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   z-index: -99;
 }
@@ -297,7 +297,7 @@ HERO CONTANT
 
 .hero {
   position: relative;
-  height: 100vh;
+  height: 100dvh;
   padding: 0 4rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.2),#fff,rgba(208, 221, 213, 0.8));
 }
