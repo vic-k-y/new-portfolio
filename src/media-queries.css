@@ -72,8 +72,9 @@
     width: 30rem;
   }
 }
-
-/* ======= 1040px ========== */
+/* ================================ */
+/* ======= 1040px ===============*/
+/* ============================= */
 
 @media (max-width: 65em) {
   /* === nav ==== */
@@ -136,8 +137,8 @@
   }
 
   .featured-project-carosol {
-    /* width: 65rem; */
-    padding: 2rem 2rem;
+    width: 66rem;
+    padding: 1rem 2rem;
   }
 
   .featured-project-carosol-fig {
@@ -541,6 +542,7 @@
     margin-left: 6rem;
   }
   .featured-project-carosol:last-child {
+    /* margin-right: 2rem; */
     padding-right: 1rem;
   }
   .featured-project-carosol-fig {
@@ -795,7 +797,7 @@
   }
   .featured-project-carosol:last-child {
     margin-right: 4rem;
-    /* padding: 2rem; */
+    padding: 2rem;
   }
 
   .featured-project-carosol-fig {
@@ -917,6 +919,12 @@
     height: 8rem;
     width: 8rem;
   }
+  .featured-project-carosol:first-child {
+    margin-left: 1.5rem;
+  }
+  .featured-project-carosol:last-child {
+    margin-right: 1.5rem;
+  }
 }
 
 /* ========== 320px ========== small phones */
@@ -1037,7 +1045,7 @@
   }
   .featured-project-carosol:last-child {
     margin-right: 2rem;
-    /* padding: 2rem; */
+    padding: 1rem;
   }
 
   .featured-project-carosol-fig {
