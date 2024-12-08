@@ -60,25 +60,28 @@ const homeel = document.querySelector(".hero");
 const projectel = document.querySelector(".featured-project");
 const aboutel = document.querySelector(".about-me");
 
-const obser = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    console.log(ent);
-    if (ent.isIntersecting === true) {
-      document
-        .querySelector(`.nav-list-item[href="#${ent.target.id}"]`)
-        .classList.add("current-indi");
-    } else
-      document
-        .querySelector(`.nav-list-item[href="#${ent.target.id}"]`) // href="#${ent.target.id} == this to figure
-        .classList.remove("current-indi"); // exact nav button using href.
-  },
-  {
-    root: null,
-    threshold: 0.5, // to monitor section view ratio in screen - 0.5 means half.
-    rootMargin: "0px",
+const highLightNav = function (entries) {
+  const ent = entries[0];
+  // console.log(ent);
+  const allNavElements = document.querySelectorAll(".nav-list-item");
+  if (ent.isIntersecting === true) {
+    const currentEl = document.querySelector(
+      `.nav-list-item[href="#${ent.target.id}"]`
+    );
+    currentEl.classList.add("current-indi");
+    allNavElements.forEach((lis) => {
+      if (lis !== currentEl) {
+        lis.classList.remove("current-indi");
+      }
+    });
   }
-);
+};
+
+const obser = new IntersectionObserver(highLightNav, {
+  root: null,
+  threshold: 0.5, // to monitor section view ratio in screen - 0.5 means half.
+  rootMargin: "0px",
+});
 
 obser.observe(homeel);
 obser.observe(projectel);
