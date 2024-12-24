@@ -510,6 +510,7 @@ featured project section
 
 .featured-tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.8rem;
 
   align-items: center;
