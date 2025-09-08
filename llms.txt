@@ -1,0 +1,122 @@
+# LLM and AI Usage Policy
+# This file specifies how AI models and LLM systems should handle this website's content
+
+# Website Information
+Site-Name: Vignesh Portfolio
+Site-URL: https://myvic.netlify.app
+Author: Vignesh
+Contact: vignesh_m20@outlook.com
+
+# AI Training Restrictions
+AI-Training: Prohibited
+Personal-Data-Training: Prohibited
+Commercial-AI-Training: Prohibited
+Model-Training: Prohibited
+
+# Allowed AI Usage
+AI-Summarization: Allowed
+AI-Search-Indexing: Allowed
+Portfolio-Listing: Allowed
+Project-Showcase: Allowed
+Professional-Information-Display: Allowed
+
+# Specific Restrictions
+Personal-Info-Training: Prohibited
+Contact-Details-Training: Prohibited
+Personal-Photos-Training: Prohibited
+Biometric-Data-Training: Prohibited
+Private-Communications: Prohibited
+
+# Content Categories
+Content-Type: Portfolio, Projects, Professional-Information
+Public-Content: Project-Descriptions, Technical-Skills, Public-Work-Examples
+Restricted-Content: Personal-Contact-Info, Personal-Photos, Personal-Details
+
+# Usage Guidelines
+Search-Results: Allowed
+Portfolio-Discovery: Allowed
+Professional-Networking: Allowed
+Recruitment-Searches: Allowed
+
+# Rate Limiting
+Max-Requests-Per-Hour: 50
+Crawl-Delay: 2
+
+# User Agent Specific Rules
+User-agent: *
+Training: prohibited
+Indexing: allowed
+Summarization: allowed
+
+User-agent: GPTBot
+Training: prohibited
+Indexing: allowed
+Personal-Data: prohibited
+
+User-agent: ChatGPT-User
+Training: prohibited
+Search-Display: allowed
+
+User-agent: Claude-Web
+Training: prohibited
+Portfolio-Listing: allowed
+
+User-agent: Bard
+Training: prohibited
+Professional-Display: allowed
+
+User-agent: PaLM
+Training: prohibited
+Indexing: allowed
+
+# Commercial AI Systems
+User-agent: Commercial-AI
+Training: prohibited
+Data-Collection: prohibited
+Contact-Required: yes
+
+# Attribution Requirements (when content is displayed)
+Attribution-Required: Yes
+Attribution-Text: "Vignesh Portfolio - https://myvic.netlify.app"
+Citation-Format: "Source: Vignesh, Web Developer Portfolio (myvic.netlify.app)"
+
+# Privacy Protection
+Personal-Data-Extraction: Prohibited
+Contact-Info-Storage: Prohibited
+Photo-Analysis: Prohibited
+Identity-Training: Prohibited
+
+# Allowed Display Context
+Portfolio-Search-Results: Allowed
+Professional-Skill-Queries: Allowed
+Project-Showcase-Results: Allowed
+Developer-Directory-Listing: Allowed
+
+# Contact for Questions
+Contact-Email: vignesh_m20@outlook.com
+Policy-Questions: welcome
+Training-Requests: denied
+Commercial-Licensing: contact-required
+
+# Compliance and Legal
+GDPR-Compliant: Required
+Privacy-Respecting: Required
+Data-Minimization: Required
+Purpose-Limitation: Required
+
+# Last Updated
+Last-Modified: 2025-09-08
+Version: 1.0
+Policy-Type: Restrictive-Training-Allowed-Display
+
+# Summary
+# This website allows AI systems to:
+# - Display portfolio content in search results
+# - Summarize professional information
+# - List projects and skills
+# 
+# This website prohibits AI systems from:
+# - Training on any personal data
+# - Storing personal contact information
+# - Using content for model training
+# - Extracting personal biometric data

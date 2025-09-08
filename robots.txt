@@ -1,0 +1,60 @@
+User-agent: *
+Allow: /
+
+# Block access to admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Block access to development files
+Disallow: /node_modules/
+
+# Allow access to main content
+Allow: /img/
+Allow: /
+Allow: /llms.txt
+Allow: /ai.txt
+
+# AI and LLM Crawlers - Training Prohibited, Display Allowed
+User-agent: GPTBot
+Allow: /
+Training: prohibited
+Portfolio-Display: allowed
+Crawl-delay: 2
+
+User-agent: ChatGPT-User
+Allow: /
+Training: prohibited
+Search-Results: allowed
+
+User-agent: Claude-Web
+Allow: /
+Training: prohibited
+Professional-Listing: allowed
+Crawl-delay: 2
+
+User-agent: Bard
+Allow: /
+Training: prohibited
+Developer-Showcase: allowed
+Crawl-delay: 2
+
+User-agent: PaLM
+Allow: /
+Training: prohibited
+Indexing: allowed
+Crawl-delay: 2
+
+# Commercial AI - Restricted Access
+User-agent: Commercial-AI
+Disallow: /
+# Contact: vignesh_m20@outlook.com for licensing
+
+# Sitemap location
+Sitemap: https://myvic.netlify.app/sitemap.xml
+
+# AI Policy Files
+AI-Policy: https://myvic.netlify.app/llms.txt
+LLM-Policy: https://myvic.netlify.app/ai.txt
+
+# Crawl delay (optional)
+Crawl-delay: 1
