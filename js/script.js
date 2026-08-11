@@ -66,7 +66,7 @@ const highLightNav = function (entries) {
   const allNavElements = document.querySelectorAll(".nav-list-item");
   if (ent.isIntersecting === true) {
     const currentEl = document.querySelector(
-      `.nav-list-item[href="#${ent.target.id}"]`
+      `.nav-list-item[href="#${ent.target.id}"]`,
     );
     currentEl.classList.add("current-indi");
     allNavElements.forEach((lis) => {
@@ -102,25 +102,25 @@ obser.observe(aboutel);
 //   });
 // });
 
-const leftbtn = document.querySelector(".featured-project-left-icon");
-const rightbtn = document.querySelector(".featured-project-right-icon");
-const carousel = document.querySelector(".featured-project-scroll");
-const itemWidth = document.querySelector(
-  ".featured-project-carosol"
-).offsetWidth;
+// const leftbtn = document.querySelector(".featured-project-left-icon");
+// const rightbtn = document.querySelector(".featured-project-right-icon");
+// const carousel = document.querySelector(".featured-project-scroll");
+// const itemWidth = document.querySelector(
+//   ".featured-project-carosol"
+// ).offsetWidth;
 
-// Scroll to the right when the right button is clicked
-rightbtn.addEventListener("click", function () {
-  carousel.scrollBy({
-    left: itemWidth, // Adjust the value (300) as needed to scroll the desired amount
-    behavior: "smooth",
-  });
-});
+// // Scroll to the right when the right button is clicked
+// rightbtn.addEventListener("click", function () {
+//   carousel.scrollBy({
+//     left: itemWidth, // Adjust the value (300) as needed to scroll the desired amount
+//     behavior: "smooth",
+//   });
+// });
 
-// Scroll to the left when the left button is clicked
-leftbtn.addEventListener("click", function () {
-  carousel.scrollBy({
-    left: -itemWidth, // Adjust the value (-300) as needed to scroll the desired amount
-    behavior: "smooth",
-  });
-});
+// // Scroll to the left when the left button is clicked
+// leftbtn.addEventListener("click", function () {
+//   carousel.scrollBy({
+//     left: -itemWidth, // Adjust the value (-300) as needed to scroll the desired amount
+//     behavior: "smooth",
+//   });
+// });
